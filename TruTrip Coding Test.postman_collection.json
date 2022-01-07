@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "14a896e3-722a-420d-b223-eeab12a14869",
+		"name": "TruTrip Coding Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}api/trip",
+					"host": [
+						"{{base_url}}api"
+					],
+					"path": [
+						"trip"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Perjalanan ke 3",
+							"type": "text"
+						},
+						{
+							"key": "origin_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "destination_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "start_date",
+							"value": "2021-01-01",
+							"type": "text"
+						},
+						{
+							"key": "end_date",
+							"value": "2021-01-03",
+							"type": "text"
+						},
+						{
+							"key": "trip_types_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Testing perjalanan ke 3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}api/trip",
+					"host": [
+						"{{base_url}}api"
+					],
+					"path": [
+						"trip"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show data by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}api/trip/4",
+					"host": [
+						"{{base_url}}api"
+					],
+					"path": [
+						"trip",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Perjalanan ke 3rrfed",
+							"type": "text"
+						},
+						{
+							"key": "origin_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "destination_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "start_date",
+							"value": "2021-01-01",
+							"type": "text"
+						},
+						{
+							"key": "end_date",
+							"value": "2021-01-03",
+							"type": "text"
+						},
+						{
+							"key": "trip_types_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Testing perjalanan ke 3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}api/trip/4",
+					"host": [
+						"{{base_url}}api"
+					],
+					"path": [
+						"trip",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}api/trip/23",
+					"host": [
+						"{{base_url}}api"
+					],
+					"path": [
+						"trip",
+						"23"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "kcwfRN1yHoL5btyqILzhL4mJ69PCaqDadrUDX6yjKBEKRORMc6mmqC8jgud9o8qQ",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "X-Authorization",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "title",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "origin_id",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "destination_id",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "start_date",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "end_date",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "trip_types_id",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "description",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000",
+			"type": "default"
+		}
+	]
+}
